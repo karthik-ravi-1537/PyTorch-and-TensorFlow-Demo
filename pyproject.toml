@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pytorch-tensorflow-demo"
+name = "pytorch-and-tensorflow-demo"
 version = "0.1.0"
 description = "Side-by-side PyTorch and TensorFlow tutorial series with practical examples"
 readme = "README.md"
