@@ -1,10 +1,10 @@
-name: ml-frameworks-tutorial
+name: pytorch-and-tensorflow-demo
 channels:
   - pytorch
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10
+  - python=3.11
   - pip
   
   # Core ML Frameworks
@@ -28,8 +28,8 @@ dependencies:
   
   # Development Tools
   - pytest>=7.4.0
-  - black>=23.0.0
-  - flake8>=6.0.0
+  - ruff>=0.4.0
+  - black>=24.0.0
   
   # Additional dependencies via pip
   - pip:

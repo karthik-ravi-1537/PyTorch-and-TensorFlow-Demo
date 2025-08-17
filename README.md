@@ -46,44 +46,38 @@ A comprehensive tutorial series comparing PyTorch and TensorFlow through practic
 - **API Endpoints**: Basic model serving with web frameworks
 - **Deployment Basics**: Containerization and MLOps introduction
 
-## 🚀 **Quick Start**
+## Installation
 
-### **Prerequisites**
-- Python 3.10 or higher
-- Basic programming knowledge
-- Familiarity with machine learning concepts (helpful but not required)
+### Prerequisites
+- [Homebrew](https://brew.sh/) for installing uv
+- [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
-### **Installation**
+### Method 1: uv
 
-#### **Option 1: Using Conda (Recommended)**
 ```bash
-# Clone the repository
+brew install uv
+
 git clone https://github.com/karthik-ravi-1537/PyTorch-and-TensorFlow-Demo.git
 cd PyTorch-and-TensorFlow-Demo
 
-# Create and activate conda environment
-conda env create -f environment.yml
-conda activate ml-frameworks-tutorial
+uv sync
 
-# Launch Jupyter Lab
-jupyter lab
+source .venv/bin/activate
 ```
 
-#### **Option 2: Using pip**
+### Method 2: conda
+
 ```bash
-# Clone the repository
 git clone https://github.com/karthik-ravi-1537/PyTorch-and-TensorFlow-Demo.git
 cd PyTorch-and-TensorFlow-Demo
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+conda env create -f environment.yml
+conda activate pytorch-and-tensorflow-demo
+```
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch Jupyter Lab
-jupyter lab
+### Verification
+```bash
+python test_setup.py
 ```
 
 ### **Getting Started**
