@@ -90,7 +90,16 @@ select = [
 ignore = [
     "E501",  # line too long (handled by black)
     "B008",  # function calls in argument defaults
+    "N803",  # argument names should be lowercase (X is conventional in ML)
+    "N806",  # variable names should be lowercase (X, A, B conventional for matrices)
+    "N812",  # lowercase imported as non-lowercase (F for functional is common)
+    "N816",  # mixedCase variable in global scope (ML naming conventions)
+    "E402",  # module level import not at top (acceptable in notebooks for pedagogy)
+    "B007",  # loop control variable not used (acceptable in educational examples)
 ]
+
+[tool.ruff.lint.per-file-ignores]
+"notebooks/**/*.ipynb" = ["F401"]  # Allow unused imports in educational notebooks
 
 [tool.ruff.lint.isort]
 force-single-line = false
