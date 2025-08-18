@@ -157,6 +157,8 @@ immutabledict==4.2.1
     # via tensorflow-datasets
 importlib-resources==6.5.2
     # via etils
+iniconfig==2.1.0
+    # via pytest
 ipykernel==6.30.1
     # via
     #   jupyter
@@ -364,6 +366,7 @@ packaging==25.0
     #   matplotlib
     #   nbconvert
     #   plotly
+    #   pytest
     #   spacy
     #   tensorboard
     #   tensorflow
@@ -390,6 +393,8 @@ platformdirs==4.3.8
     # via jupyter-core
 plotly==6.3.0
     # via pytorch-and-tensorflow-demo (pyproject.toml)
+pluggy==1.6.0
+    # via pytest
 preshed==3.0.10
     # via
     #   spacy
@@ -439,9 +444,16 @@ pygments==2.19.2
     #   ipython-pygments-lexers
     #   jupyter-console
     #   nbconvert
+    #   pytest
     #   rich
 pyparsing==3.2.3
     # via matplotlib
+pytest==8.4.1
+    # via
+    #   pytorch-and-tensorflow-demo (pyproject.toml)
+    #   pytest-asyncio
+pytest-asyncio==1.1.0
+    # via pytorch-and-tensorflow-demo (pyproject.toml)
 python-dateutil==2.9.0.post0
     # via
     #   arrow
