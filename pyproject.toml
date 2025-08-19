@@ -9,7 +9,7 @@ description = "Side-by-side PyTorch and TensorFlow tutorial series with practica
 readme = "README.md"
 license = "MIT"
 authors = [{name = "Karthik Ravi"}]
-requires-python = ">=3.11"
+requires-python = "==3.11.*"
 keywords = ["pytorch", "tensorflow", "machine-learning", "tutorial", "demo", "ml"]
 
 dependencies = [
